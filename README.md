@@ -53,6 +53,8 @@ This 👆will update the `Brewfile` with your current installed apps (if install
 
 Run this 👇 on your new machine's terminal app and follow the instructions there.
 
+> DON'T FORGET TO SWAP THIS REPO BY YOUR FORKED ONE INSTEAD!
+
 ```bash
 git clone --recurse-submodules https://git.unic.com/scm/~oriol.torrent/frontend-dotfiles-oriol.git ~/.dotfiles && cd ~/.dotfiles && ./install.sh
 ```
