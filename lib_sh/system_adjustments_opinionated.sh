@@ -81,7 +81,7 @@ function opinionated_finder() {
   running "Set Home as the default location for new Finder windows"
   # For other paths, use `PfLo` and `file:///full/path/here/`
   defaults write com.apple.finder NewWindowTarget -string "PfLo"
-  defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+  defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Sites/"
 
   running "Set the Finder prefs for showing a few different volumes on the Desktop"
   defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
