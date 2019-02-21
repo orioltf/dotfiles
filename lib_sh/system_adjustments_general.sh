@@ -1,4 +1,4 @@
-source ../configs/installation.sh
+source ./configs/installation.sh
 
 function general_ui() {
   bot "General UI/UX"
