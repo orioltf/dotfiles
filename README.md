@@ -54,7 +54,7 @@ This 👆will update the `Brewfile` with your current installed apps (if install
 Run this 👇 on your new machine's terminal app and follow the instructions there.
 
 ```bash
-git clone --recurse-submodules https://git.unic.com/scm/budc/frontend-dotfiles.git ~/.dotfiles && cd ~/.dotfiles && ./install.sh
+git clone --recurse-submodules https://git.unic.com/scm/~oriol.torrent/frontend-dotfiles-oriol.git ~/.dotfiles && cd ~/.dotfiles && ./install.sh
 ```
 
 When it finishes reboot the system when the prompt requires so. After the reboot you may see a message like the following in the terminal:
