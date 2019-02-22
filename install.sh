@@ -310,7 +310,7 @@ ok
 ###############################################################################
 
 bot "installing nvm"
-curl -o- https://raw.githubusercontent.com/creationix/nvm/$nvm_latest_version/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v$nvm_latest_version/install.sh | bash
 ok
 
 # source nvm: https://unix.stackexchange.com/questions/184508/nvm-command-not-available-in-bash-script
