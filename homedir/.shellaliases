@@ -118,7 +118,9 @@ alias gShowMergedLocalBranches="git branch --merged"
 # gbnm in oh-my-zsh
 alias gShowNotMergedLocalBranches="git branch --no-merged"
 # gbda in oh-my-zsh
-alias gDelMergedLocalBranches="git branch --no-color --merged | command grep -vE "^(\*|\s*(master|develop|dev)\s*$)" | command xargs -n 1 git branch -d"
+# this alias throws 'no matches found' error.
+# alias gDelMergedLocalBranches="git branch --no-color --merged | command grep -vE "^(\*|\s*(master|develop|dev)\s*$)" | command xargs -n 1 git branch -d"
+alias gDelMergedLocalBranches="gbda"
 
 alias gShowMergedRemoteBranches="git branch -r --merged origin/develop"
 alias gShowNotMergedRemoteBranches="git branch -r --no-merged origin/develop"
