@@ -1,6 +1,6 @@
 [user]
-  name = Oriol Torrent Florensa
-  email = oriol.tf@me.com
+	name = Oriol Torrent Florensa
+	email = oriol.tf@me.com
 [github]
   # https://github.com/blog/180-local-github-config
   user = orioltf
@@ -37,7 +37,7 @@
   fontdiff = -family Monaco -size 10 -weight normal -slant roman -underline 0 -overstrike 0
 
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/oriol.torrent/.gitignore
   quotepath = false
   # line endings
   # force LF during add
@@ -206,3 +206,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[commit]
+	template = /Users/oriol.torrent/.stCommitMsg
