@@ -79,7 +79,7 @@ plugins=(
 	autojump
 	brew
 	git
-	colored-man
+	colored-man-pages
 	colorize
 	compleat
 	cp
