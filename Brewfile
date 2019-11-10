@@ -5,12 +5,16 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 # Search tool like grep, but optimized for programmers
 brew "ack"
+# Shell extension to jump to frequently used directories
+brew "autojump"
 # Programmable completion for Bash 3.2
 brew "bash-completion"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Identify or delete duplicate files
 brew "fdupes"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Distributed revision control system
@@ -21,12 +25,16 @@ brew "git-flow-avh"
 brew "graphicsmagick"
 # Mac App Store command-line interface
 brew "mas"
+# Java-based project management
+brew "maven"
 # Monitor data's progress through a pipe
 brew "pv"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Internet file retriever
 brew "wget"
+# JavaScript package manager
+brew "yarn"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Additional completion definitions for zsh
@@ -45,18 +53,22 @@ cask "disk-sensei"
 cask "docker"
 cask "doxie"
 cask "epubquicklook"
-# cask "firefox"
+cask "firefox"
 cask "firefox-developer-edition"
 # cask "forklift"
 # cask "franz"
 cask "gas-mask"
 cask "ghostlab"
 # cask "google-chrome"
+cask "grammarly"
+cask "handbrake"
 cask "hetimazipql"
 cask "jetbrains-toolbox"
 # cask "imageoptim"
 cask "imazing"
 cask "itsycal"
+cask "java"
+cask "jetbrains-toolbox"
 cask "kitematic"
 # cask "macpass"
 # cask "microsoft-office"
@@ -85,7 +97,7 @@ cask "synology-drive"
 cask "teamviewer"
 cask "telegram"
 cask "the-unarchiver"
-cask "toggle"
+cask "toggl"
 # cask "ubiquiti-unifi-controller"
 # cask "virtualbox"
 cask "visual-studio-code"
@@ -94,6 +106,7 @@ cask "vlc"
 cask "webpquicklook"
 cask "webstorm"
 mas "Enpass", id: 732710998
-mas "Microsoft Remote Desktop", id: 1295203466
+mas "Grammarly for Safari", id: 1462114288
+mas "Polyglot", id: 1471801525
 mas "SiteSucker", id: 442168834
 mas "Twitter", id: 409789998
