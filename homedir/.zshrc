@@ -107,7 +107,7 @@ plugins=(
 	virtualenv
 	web-search
 	zsh_reload
-	zsh-syntax-highlighting
+	# zsh-syntax-highlighting
 	z
 #	local_release
 #	new_estatico_git_project
@@ -167,3 +167,4 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
