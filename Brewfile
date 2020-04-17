@@ -9,6 +9,8 @@ brew "ack"
 brew "autojump"
 # Programmable completion for Bash 3.2
 brew "bash-completion"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Identify or delete duplicate files
@@ -17,6 +19,8 @@ brew "fdupes"
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Turn movies into GIFs
+brew "gifify"
 # Distributed revision control system
 brew "git"
 # AVH edition of git-flow
@@ -27,6 +31,8 @@ brew "graphicsmagick"
 brew "mas"
 # Java-based project management
 brew "maven"
+# Platform built on V8 to build network applications
+brew "node"
 # Monitor data's progress through a pipe
 brew "pv"
 # Display directories as trees (with optional color/HTML output)
@@ -107,6 +113,8 @@ cask "webpquicklook"
 cask "webstorm"
 mas "Enpass", id: 732710998
 mas "Grammarly for Safari", id: 1462114288
+mas "Microsoft To Do", id: 1274495053
 mas "Polyglot", id: 1471801525
 mas "SiteSucker", id: 442168834
 mas "Twitter", id: 409789998
+mas "WhatsApp", id: 1147396723

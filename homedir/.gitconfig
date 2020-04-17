@@ -1,6 +1,6 @@
 [user]
 	name = Oriol Torrent Florensa
-	email = oriol.torrent@unic.com
+	email = oriol.tf@me.com
 [github]
   # https://github.com/blog/180-local-github-config
   user = orioltf
@@ -47,7 +47,7 @@
   safecrlf = warn
   # prevent crlf (then you will have to deal with the problem -- dos2unix, etc)
   #safecrlf = true
-  editor = vim
+  editor = code
   #editor = subl -w
 
 [alias]
@@ -151,7 +151,7 @@
   sno = show --name-only
   logsimple = log --graph --abbrev-commit --pretty=oneline --all --decorate
 [apply]
-  whitespace = nowarn
+  #whitespace = nowarn
 
 [rerere]
   #Enable the recording of resolved conflicts, so that identical hunks can be resolved automatically later on
@@ -202,7 +202,7 @@
   required = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
