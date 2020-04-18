@@ -48,6 +48,7 @@ brew "zsh-completions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 cask "adobe-acrobat-reader"
+cask "balenaetcher"
 cask "brave-browser"
 cask "charles"
 cask "clipy"
