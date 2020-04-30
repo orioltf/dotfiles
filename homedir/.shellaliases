@@ -172,3 +172,6 @@ alias highlight_js='pbpaste | highlight --syntax=js -O rtf --font-size 18 --styl
 alias highlight_js_ln='pbpaste | highlight --syntax=js -O rtf --line-numbers --font-size 18 --style solarized-dark -W -J 80 -j 3 | pbcopy'
 
 
+############################################################################
+
+alias update.zsh.theme=git -C $ZSH_CUSTOM/themes/powerlevel10k pull
