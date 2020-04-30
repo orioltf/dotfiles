@@ -11,7 +11,7 @@ This will:
 - Install software via [Homebrew bundle](./Brewfile)
 - Set Z-Shell as the default user login shell
 - Use [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) shell framework
-- Set `powerlevel9k` theme (but you can pick yours from https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)
+- Set [`powerlevel10k`](https://github.com/romkatv/powerlevel10k) theme (but you can pick yours from https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)
 - Install PowerLine fonts to be able to have icons in the terminal prompt
 - Install useful key bindings and fuzzy completion
 - Alias user's home dotfiles to the ones in this repo

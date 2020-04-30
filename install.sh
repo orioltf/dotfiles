@@ -228,9 +228,9 @@ action "cp lib_zsh/*.zsh oh-my-zsh/custom"
 cp lib_zsh/*.zsh oh-my-zsh/custom
 ok
 
-running "installing powerLevel9k theme"
-if [[ ! -d "./oh-my-zsh/custom/themes/powerlevel9k" ]]; then
-  git clone https://github.com/bhilburn/powerlevel9k.git oh-my-zsh/custom/themes/powerlevel9k
+running "installing powerLevel10k theme"
+if [[ ! -d "./oh-my-zsh/custom/themes/powerlevel10k" ]]; then
+  git clone https://github.com/romkatv/powerlevel10k.git oh-my-zsh/custom/themes/powerlevel10k
 fi
 ok
 
@@ -249,7 +249,7 @@ ok
 running "installing fonts"
 ./fonts/install.sh
 running "installing PowerLine fonts"
-$tools_dir/powerline-fonts/install.s
+$tools_dir/powerline-fonts/install.sh
 ok
 
 running "activating zsh-completions"
@@ -257,6 +257,14 @@ running "activating zsh-completions"
 # https://stackoverflow.com/questions/13762280/zsh-compinit-insecure-directories
 sudo chmod -R 755 /usr/local/share
 rm -f ~/.zcompdump; compinit
+ok
+
+running "adding zsh-autosuggestions"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+ok
+
+running "adding zsh-highlighting"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ok
 
 running "making sure ZSH is up to date"

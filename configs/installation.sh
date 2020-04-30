@@ -13,4 +13,4 @@ TERMINAL_THEME="FrontEndDelight"
 LOGIN_WINDOW_TEXT="This computer belongs to Unic AG, please call +41 44 560 12 12"
 
 # Set the latest NVM version by checking https://github.com/creationix/nvm/releases
-nvm_latest_version="0.34.0"
+nvm_latest_version="0.35.3"

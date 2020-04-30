@@ -37,7 +37,7 @@
   fontdiff = -family Monaco -size 10 -weight normal -slant roman -underline 0 -overstrike 0
 
 [core]
-	excludesfile = /Users/oriol.torrent/.gitignore
+  excludesfile = ~/.gitignore
   quotepath = false
   # line endings
   # force LF during add
@@ -48,6 +48,7 @@
   # prevent crlf (then you will have to deal with the problem -- dos2unix, etc)
   #safecrlf = true
   editor = code
+  #editor = vim
   #editor = subl -w
 
 [alias]
