@@ -234,22 +234,15 @@ if [[ ! -d "./oh-my-zsh/custom/themes/powerlevel10k" ]]; then
 fi
 ok
 
-running "getting PowerLine fonts"
-if [[ ! -d "$tools_dir/powerline-fonts" ]]; then
-  git clone https://github.com/powerline/fonts.git $tools_dir/powerline-fonts
-fi
+running "installing Nerd fonts"
+# https://github.com/ryanoasis/nerd-fonts
+brew cask install $( brew search nerd-font | awk '/nerd-font/ && !/-mono$/' | tr '\n' ' ' )
 ok
 
 running "installing useful key bindings and fuzzy completion"
 # https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh
 # https://sourabhbajaj.com/mac-setup/iTerm/fzf.html
 $(brew --prefix)/opt/fzf/install
-ok
-
-running "installing fonts"
-./fonts/install.sh
-running "installing PowerLine fonts"
-$tools_dir/powerline-fonts/install.sh
 ok
 
 running "activating zsh-completions"
