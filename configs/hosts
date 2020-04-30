@@ -1,3 +1,47 @@
+
+#<orioltf>
+127.0.0.1 		orioltf.test
+127.0.0.1 		ort.test
+#</orioltf>
+
+#<http://👻>
+127.0.0.1 		xn--9q8h
+#</http://👻>
+
+#51.138.65.243 www.flughafen-zuerich.ch
+#51.124.139.34 dxp-idpprofile.int.flughafen-zuerich.ch dxp-idp.int.flughafen-zuerich.ch
+
+#<KTBE>
+127.0.0.1	be.test
+127.0.0.1	www.be.test
+127.0.0.1	police.be.test
+127.0.0.1	www.police.be.test
+127.0.0.1	stv.be.test
+127.0.0.1	www.stv.be.test
+#</KTBE>
+
+#<COOP>
+172.30.226.10	sharepoint.coop.ch
+172.30.226.11	jira.hs.coop.ch
+172.30.226.11	jira.coop.ch
+172.30.226.12	svrevs02.hs.coop.ch
+172.30.226.13	swrepo.hs.coop.ch
+172.30.226.20	confluence.hs.coop.ch
+172.30.226.20	confluence.coop.ch
+#</COOP>
+
+#<Skype Ads Blocker>
+127.0.0.1	rad.msn.com
+127.0.0.1	live.rads.msn.com
+127.0.0.1	ads1.msn.com
+127.0.0.1	static.2mdn.net
+127.0.0.1	g.msn.com
+127.0.0.1	a.ads2.msads.net
+127.0.0.1	b.ads2.msads.net
+127.0.0.1	ac3.msn.com
+#</Skype>
+
+
 # This hosts file is brought to you by Dan Pollock and can be found at
 # http://someonewhocares.org/hosts/
 # You are free to copy and distribute this file for non-commercial uses,
