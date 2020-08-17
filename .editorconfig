@@ -9,5 +9,17 @@ end_of_line = lf
 insert_final_newline = true
 charset = utf-8
 trim_trailing_whitespace = true
+
+# Let's be developer-accessible: each developer may need different indentation sizes for reading/seeing/understanding code
+# https://dev.to/alexandersandberg/why-we-should-default-to-tabs-instead-of-spaces-for-an-accessible-first-environment-101f
+# https://www.reddit.com/r/javascript/comments/c8drjo/nobody_talks_about_the_real_reason_to_use_tabs/
+# tab_width = 2
+# indent_size = 2
+indent_style = tab
+
+[{*.json,*.yml}]
 indent_style = space
 indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false

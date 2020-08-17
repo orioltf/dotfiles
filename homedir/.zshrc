@@ -77,12 +77,12 @@ plugins=(
 	dircycle
 	dirhistory
 	dirpersist
-  dnf
+	dnf
 	docker
-  docker-compose
+	docker-compose
 	git
 	git-extras
-	git-flow
+#	git-flow
 	git-flow-avh
 	git-prompt
 	git-remote-branch
@@ -99,7 +99,8 @@ plugins=(
 	vagrant
 	virtualenv
 	web-search
-  zsh-autosuggestions
+	yarn
+	zsh-autosuggestions
 	zsh_reload
 	# zsh-syntax-highlighting
 	z
@@ -108,6 +109,11 @@ plugins=(
 #	update_from_estatico
 )
 
+fpath=(
+	/usr/local/share/zsh-completions
+	/usr/local/share/zsh/site-functions
+	$fpath
+)
 source $ZSH/oh-my-zsh.sh
 
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -120,7 +126,7 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
+# if [[ -n $SSH_CONNECTION ]]; thenq
 #   export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
