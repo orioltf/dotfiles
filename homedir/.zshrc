@@ -2,7 +2,7 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+	source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # This sets up colors properly
@@ -148,11 +148,11 @@ source $ZSH/oh-my-zsh.sh
 
 autoload -U add-zsh-hook
 load-nvmrc() {
-  if [[ -f .nvmrc && -r .nvmrc ]]; then
-    nvm use &> /dev/null
-  elif [[ $(nvm version) != $(nvm version default)  ]]; then
-    nvm use default &> /dev/null
-  fi
+	if [[ -f .nvmrc && -r .nvmrc ]]; then
+		nvm use &> /dev/null
+	elif [[ $(nvm version) != $(nvm version default)  ]]; then
+		nvm use default &> /dev/null
+	fi
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc

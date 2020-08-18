@@ -9,7 +9,7 @@ brew "ack"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # Programmable completion for Bash 3.2
-brew "bash-completion"
+# brew "bash-completion"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
 # Perl lib for reading and writing EXIF metadata
