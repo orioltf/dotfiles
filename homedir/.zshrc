@@ -85,7 +85,6 @@ plugins=(
 #	git-flow
 	git-flow-avh
 	git-prompt
-	git-remote-branch
 	github
 	gulp
 	history
