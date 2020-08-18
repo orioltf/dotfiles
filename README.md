@@ -70,6 +70,12 @@ Ignore insecure directories and continue [y] or abort compinit [n]?
 
 > Note: running install.sh is idempotent. You can run it again and again as you add new features or software to the scripts!
 
+Finally, configure your PowerLevel10 prompt with:
+
+```bash
+p10k configure
+```
+
 ### Finalization
 
 When it finishes, open Terminal (or iTerm) and:
