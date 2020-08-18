@@ -29,7 +29,7 @@ This will:
 
 Fork this repo, then clone it and do the following:
 
-- Configure your installation variables in [`./config/installation.sh`](./config/installation.sh)
+- Configure your installation variables in [`./configs/installation.sh`](./configs/installation.sh)
 - Configure your ZSH variables in [`./lib_zsh/frontend.zsh`](./lib_zsh/frontend.zsh) (Config vars section)
 - Configure your system adjustments in [`lib_sh/system_adjustments_opinionated.sh`](lib_sh/system_adjustments_opinionated.sh)
 - Go through [`./install.sh`](./install.sh) and [`./lib_sh/system_adjustments_general.sh`](./lib_sh/system_adjustments_general.sh) and adapt it in case you don't like something
