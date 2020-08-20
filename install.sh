@@ -220,7 +220,12 @@ if [[ "$CURRENTSHELL" != "/usr/local/bin/zsh" ]]; then
 	bot "setting newer homebrew zsh (/usr/local/bin/zsh) as your shell (password required)"
 	# sudo bash -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
 	# chsh -s /usr/local/bin/zsh
-	sudo dscl . -change /Users/$USER UserShell $SHELL /usr/local/bin/zsh > /dev/null 2>&1
+	
+    # For Macos 10.14 Mohave:
+    # sudo dscl . -change /Users/$USER UserShell $SHELL /usr/local/bin/zsh > /dev/null 2>&1
+    
+    # For Macos 10.15 Catalina:
+    sudo chsh -s /bin/zsh
 	ok
 fi
 
