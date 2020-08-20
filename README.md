@@ -44,6 +44,12 @@ brew bundle dump --describe --force
 
 This 👆will update the `Brewfile` with your current installed apps (if installed using Brew). Notice that this also requires you to have Homebrew and MAS installed (which you eventually already have if you also run this in your old machine, back in the day you got it 😉).
 
+#### Git
+
+- Check if `git` is already available in your system to be able to clone the repo: `git -v`
+- If you see the error `xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun ` then you need to install Ddeveloper Tools
+- Install developer tools by executing: `xcode-select --install`
+
 #### Disclaimer
 
 > You should always review arbitrary code from the internet before running it on your machine with sudo power!
