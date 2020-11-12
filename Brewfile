@@ -35,8 +35,6 @@ brew "graphicsmagick"
 brew "mas"
 # Java-based project management
 brew "maven"
-# Platform built on V8 to build network applications
-brew "node"
 # Monitor data's progress through a pipe
 brew "pv"
 # Display directories as trees (with optional color/HTML output)
@@ -92,6 +90,7 @@ cask "kitematic"
 cask "microsoft-auto-update"
 cask "microsoft-office"
 cask "microsoft-teams"
+cask "onedrive"
 cask "omnidisksweeper"
 cask "onyx"
 # cask "osxfuse"
