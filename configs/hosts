@@ -12,12 +12,38 @@
 #51.124.139.34 dxp-idpprofile.int.flughafen-zuerich.ch dxp-idp.int.flughafen-zuerich.ch
 
 #<KTBE>
+# The default portal website -> in prod www.be.ch
+# Points to our /content/portal-test testcontent tree
+127.0.0.1   www.local.be.ch
+
+# An example for a be.ch subdomain, pointing automatically also to /content/portal-test
+127.0.0.1   www.local.portal-test.be.ch
+
+# AEM Author via webserver
+127.0.0.1 www.local.author.be.ch
+
+# News-Service
+127.0.0.1  news-service-backend
+127.0.0.1  www.local.admin.news.apps.be.ch
+127.0.0.1  www.local.api.news.apps.be.ch
+
 127.0.0.1	be.test
 127.0.0.1	www.be.test
 127.0.0.1	police.be.test
 127.0.0.1	www.police.be.test
 127.0.0.1	stv.be.test
 127.0.0.1	www.stv.be.test
+127.0.0.1	aare.bve.be.test
+127.0.0.1	www.aare.bve.be.test
+127.0.0.1	fin.be.test
+127.0.0.1	www.fin.be.test
+127.0.0.1	local.ns.be.ch
+127.0.0.1	www.local.portal-test.be.ch
+127.0.0.1	www.local.be.ch
+# News-Service
+127.0.0.1	news-service-backend
+127.0.0.1	www.local.admin.news.apps.be.ch
+127.0.0.1	www.local.api.news.apps.be.ch
 #</KTBE>
 
 #<COOP>
