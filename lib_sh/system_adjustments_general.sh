@@ -249,6 +249,9 @@ function general_finder() {
 	OpenWith -bool true \
 	Privileges -bool true
 
+	running "Get Quicklook plugins working in Catalina: remove the quarantine attribute"
+	xattr -d -r com.apple.quarantine ~/Library/QuickLook
+
 	running "Enable text selection in quicklook"
 	defaults write com.apple.finder QLEnableTextSelection -bool true
 }

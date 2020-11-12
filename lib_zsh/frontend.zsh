@@ -19,7 +19,8 @@ EDITOR=code
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="pygmalion"
-export ZSH_THEME="powerlevel10k/powerlevel10k"
+# Comment out because now it is installed via Homebrew and sourced in .zshrc
+# export ZSH_THEME="powerlevel10k/powerlevel10k"
 
 ############################################################################
 #### Load NVM
