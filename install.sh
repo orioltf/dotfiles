@@ -172,8 +172,8 @@ running "checking homebrew install"
 brew_bin=$(which brew) 2>&1 > /dev/null
 if [[ $? != 0 ]]; then
 	action "installing homebrew"
-    	# Fix error from homebre that cannot install if /usr/local doesn't belong to the current user, like in Unic's case
-        sudo chown -R $USER /usr/local
+		# Fix error from homebre that cannot install if /usr/local doesn't belong to the current user, like in Unic's case
+		sudo chown -R $USER /usr/local
 		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 		if [[ $? != 0 ]]; then
 			error "unable to install homebrew, script $0 abort!"
@@ -222,10 +222,10 @@ if [[ "$CURRENTSHELL" != "/usr/local/bin/zsh" ]]; then
 	bot "setting newer homebrew zsh (/usr/local/bin/zsh) as your shell (password required)"
 	# sudo bash -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
 	# chsh -s /usr/local/bin/zsh
-	
+
     # For Macos 10.14 Mohave:
     # sudo dscl . -change /Users/$USER UserShell $SHELL /usr/local/bin/zsh > /dev/null 2>&1
-    
+
     # For Macos 10.15 Catalina:
     sudo chsh -s /bin/zsh
 	ok
