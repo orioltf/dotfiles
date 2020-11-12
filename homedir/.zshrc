@@ -59,7 +59,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="dd.mm.yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=$ZSH/custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -108,12 +108,16 @@ plugins=(
 #	update_from_estatico
 )
 
-fpath=(
-	/usr/local/share/zsh-completions
-	/usr/local/share/zsh/site-functions
-	$fpath
-)
+if type brew &>/dev/null; then
+	FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+	autoload -Uz compinit
+	compinit
+fi
+
+
 source $ZSH/oh-my-zsh.sh
+source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
