@@ -8,10 +8,10 @@ tap "homebrew/core"
 tap "romkatv/powerlevel10k"
 # Search tool like grep, but optimized for programmers
 brew "ack"
-# Shell extension to jump to frequently used directories
-brew "autojump"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
+# Shell extension to jump to frequently used directories
+brew "autojump"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Identify or delete duplicate files
@@ -92,7 +92,6 @@ cask "microsoft-auto-update"
 cask "microsoft-office"
 cask "microsoft-teams"
 cask "mylio"
-# cask "onedrive"
 cask "omnidisksweeper"
 cask "onyx"
 # cask "osxfuse"
