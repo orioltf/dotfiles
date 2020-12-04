@@ -14,3 +14,5 @@ LOGIN_WINDOW_TEXT="This computer belongs to Unic AG, please call +41 44 560 12 1
 
 # Set the latest NVM version by checking https://github.com/creationix/nvm/releases
 nvm_latest_version="0.35.3"
+
+ZSH_CUSTOM="$HOME/.dotfiles/oh-my-zsh/custom"
