@@ -246,7 +246,7 @@ running "installing Nerd fonts"
 # https://github.com/ryanoasis/nerd-fonts
 # Install only Nerd fonts with ligatures
 # brew cask install $( brew search nerd-font | awk '/nerd-font/ && !/-mono$/' | tr '\n' ' ' )
-brew install --cask font-caskaydia-cove-nerd-font font-fantasque-sans-mono-nerd-font font-fira-code-nerd-font font-hasklug-nerd-font font-jetbrains-mono-nerd-font font-meslo-lg-nerd-font ont-monoid-nerd-font font-victor-mono-nerd-font
+brew install --cask font-caskaydia-cove-nerd-font font-fantasque-sans-mono-nerd-font font-fira-code-nerd-font font-hasklug-nerd-font font-jetbrains-mono-nerd-font font-meslo-lg-nerd-font font-monoid-nerd-font font-victor-mono-nerd-font
 ok
 
 running "installing useful key bindings and fuzzy completion"
