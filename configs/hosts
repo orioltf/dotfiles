@@ -2,7 +2,12 @@
 #<orioltf>
 127.0.0.1 		orioltf.test
 127.0.0.1 		ort.test
+127.0.0.1 		ort.local
 #</orioltf>
+
+#<finma>
+127.0.0.1 		finma.local
+#</finma>
 
 #<http://👻>
 127.0.0.1 		xn--9q8h
@@ -18,6 +23,7 @@
 
 # An example for a be.ch subdomain, pointing automatically also to /content/portal-test
 127.0.0.1   www.local.portal-test.be.ch
+127.0.0.1   www.local.components-test.be.ch
 
 # AEM Author via webserver
 127.0.0.1 www.local.author.be.ch
@@ -39,7 +45,6 @@
 127.0.0.1	www.fin.be.test
 127.0.0.1	local.ns.be.ch
 127.0.0.1	www.local.portal-test.be.ch
-127.0.0.1	www.local.be.ch
 # News-Service
 127.0.0.1	news-service-backend
 127.0.0.1	www.local.admin.news.apps.be.ch
@@ -14863,3 +14868,7 @@ ff02::3		ip6-allhosts
 # kwadronaut for Windows 7 and Vista information
 # John Mueller and Lawrence H Smith for Mac Pre-OSX information
 # Jesse Baird for the Cisco IOS script
+# Added by Docker Desktop
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
