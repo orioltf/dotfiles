@@ -39,7 +39,7 @@ export ZSH=$HOME/.dotfiles/oh-my-zsh
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -88,15 +88,15 @@ plugins=(
 	github
 	gulp
 	history
-	jira
+	# jira
 	node
 	npm
 	nvm
 	osx
-	rvm
+	# rvm
 	# terminalapp
-	vagrant
-	virtualenv
+	# vagrant
+	# virtualenv
 	web-search
 	yarn
 	zsh-autosuggestions
@@ -164,13 +164,11 @@ load-nvmrc
 # Customize to your needs...
 unsetopt correct
 
-# zsh-syntax-highlighting must be sourced at the end
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# zsh-syntax-highlighting must be sourced at the end
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
