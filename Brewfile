@@ -12,6 +12,8 @@ brew "ack"
 brew "openssl@1.1"
 # Shell extension to jump to frequently used directories
 brew "autojump"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Identify or delete duplicate files
@@ -36,8 +38,6 @@ brew "mas"
 brew "maven"
 # Platform built on V8 to build network applications
 brew "node"
-# Development kit for the Java programming language
-brew "openjdk@8"
 # Monitor data's progress through a pipe
 brew "pv"
 # Display directories as trees (with optional color/HTML output)
@@ -56,47 +56,74 @@ brew "zsh-syntax-highlighting"
 brew "heroku/brew/heroku"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
-cask "adobe-acrobat-reader"
-cask "adoptopenjdk8"
+# Application uninstaller
 cask "appcleaner"
 # cask "balenaetcher"
-cask "betterzip"
+# Utility to create and modify archives
+# cask "betterzip"
+# Web browser focusing on privacy
 cask "brave-browser"
+# Test localhost and staging websites
 cask "browserstacklocal"
 # cask "ccleaner"
+# Clipboard extension app
 cask "clipy"
 # cask "cloudmounter"
+# Multi-platform client-side cloud file encryption tool
 cask "cryptomator"
 # cask "data-rescue"
+# Visually compare and merge files
 cask "diffmerge"
+# Voice and text chat software
+cask "discord"
 # cask "disk-sensei"
+# Tool to build a system install disk
 # cask "diskmaker-x"
+# App to build and share containerized applications and microservices
 cask "docker"
+# Companion app for scanner hardware
 cask "doxie"
+# Finds duplicate files in a computer system
+cask "dupeguru"
+# QuickLook generator and Spotlight importer
 cask "epubquicklook"
+# Web browser
 cask "firefox"
+# Web browser
 cask "firefox-developer-edition"
 # cask "forklift"
 # cask "franz"
 # cask "gas-mask"
 # cask "ghostlab"
+# Web browser
 cask "google-chrome"
+# Web browser
 cask "google-chrome-canary"
+# Utility to fix grammar errors and style issues in text
 cask "grammarly"
+# Open-source video transcoder
 cask "handbrake"
-# cask "imageoptim"
+# iPhone management application
 cask "imazing"
+# Menu bar calendar
 cask "itsycal"
+# JetBrains tools manager
 cask "jetbrains-toolbox"
+# Provides updates to various Microsoft products
 cask "microsoft-auto-update"
-cask "microsoft-office"
+# Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
 cask "mylio"
+# Finds large, unwanted files and deletes them
 cask "omnidisksweeper"
+# Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
 # cask "osxfuse"
+# QuickLook plug-in that renders source code with syntax highlighting
 cask "qlcolorcode"
+# Display image info and preview unsupported formats in QuickLook
 cask "qlimagesize"
+# QuickLook generator for Markdown files
 cask "qlmarkdown"
 cask "qlprettypatch"
 cask "qlstephen"
@@ -105,31 +132,35 @@ cask "quicklook-csv"
 cask "quicklook-json"
 cask "quicklook-pat"
 cask "quicklookase"
-# cask "signal"
-# cask "skype"
-# cask "skype-for-business"
+# Instant messaging application focusing on security
+cask "signal"
+# Video chat, voice call and instant messaging application
+cask "skype"
 # cask "slack"
+# Graphical client for Git version control
 cask "sourcetree"
-cask "spectacle"
+# Music streaming service
 cask "spotify"
-# cask "superduper"
-# cask "suspicious-package" # It seems it is outdated (02/12/2020)
-# cask "synology-cloud-station-backup"
+# Sync and backup service to Synology NAS drives
 cask "synology-drive"
+# Remote access and connectivity software focused on security
 cask "teamviewer"
+# Messaging app with a focus on speed and security
 cask "telegram"
+# Unpacks archive files
 cask "the-unarchiver"
+# Time tracker
 cask "toggl-track"
-# cask "ubiquiti-unifi-controller"
-# cask "virtualbox"
-# cask "vanilla"
+# Open-source code editor
 cask "visual-studio-code"
-# cask "vivaldi"
+# Multimedia player
 cask "vlc"
 cask "webpquicklook"
+# JavaScript IDE
 cask "webstorm"
 mas "Enpass", id: 732710998
 mas "Grammarly for Safari", id: 1462114288
+mas "Kindle", id: 405399194
 mas "Microsoft To Do", id: 1274495053
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
