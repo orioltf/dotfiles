@@ -172,3 +172,6 @@ unsetopt correct
 
 # zsh-syntax-highlighting must be sourced at the end
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Added by Amplify CLI binary installer
+# export PATH="$HOME/.amplify/bin:$PATH"
