@@ -68,6 +68,7 @@ ZSH_CUSTOM=$ZSH/custom
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	autojump
+	autoupdate
 	brew
 	git
 	colored-man-pages
