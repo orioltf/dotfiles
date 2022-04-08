@@ -15,7 +15,7 @@ This will:
 - Install PowerLine fonts to be able to have icons in the terminal prompt
 - Install useful key bindings and fuzzy completion
 - Alias user's home dotfiles to the ones in this repo
-- Setup VIM and set it as default terminal editor
+- Install VIM and set it as editor
 - Install NVM from the source
 - Install current `lts` node version as the default node
 - Configure node to always install dependencies in exact versions

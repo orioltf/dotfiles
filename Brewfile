@@ -1,4 +1,3 @@
-tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
@@ -8,22 +7,14 @@ tap "homebrew/core"
 tap "romkatv/powerlevel10k"
 # Search tool like grep, but optimized for programmers
 brew "ack"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Shell extension to jump to frequently used directories
 brew "autojump"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
-# Perl lib for reading and writing EXIF metadata
-brew "exiftool"
 # Identify or delete duplicate files
 brew "fdupes"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# Tools and libraries to manipulate images in many formats
-brew "imagemagick"
 # Turn movies into GIFs
 brew "gifify"
 # Distributed revision control system
@@ -32,16 +23,18 @@ brew "git"
 brew "git-flow-avh"
 # Image processing tools collection
 brew "graphicsmagick"
+# Convert source code to formatted text with syntax highlighting
+brew "highlight"
 # Mac App Store command-line interface
 brew "mas"
-# Java-based project management
-brew "maven"
 # Platform built on V8 to build network applications
 brew "node"
 # Monitor data's progress through a pipe
 brew "pv"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Vi 'workalike' with many additional features
+brew "vim"
 # Internet file retriever
 brew "wget"
 # JavaScript package manager
@@ -52,20 +45,20 @@ brew "zsh"
 brew "zsh-completions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# Everything you need to get started with Heroku
-brew "heroku/brew/heroku"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
+# View, print, and comment on PDF documents
+cask "adobe-acrobat-reader"
 # Application uninstaller
 cask "appcleaner"
-# cask "balenaetcher"
 # Utility to create and modify archives
-# cask "betterzip"
+cask "betterzip"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Test localhost and staging websites
 cask "browserstacklocal"
-# cask "ccleaner"
+# Web debugging Proxy application
+cask "charles"
 # Clipboard extension app
 cask "clipy"
 # cask "cloudmounter"
@@ -84,7 +77,7 @@ cask "docker"
 # Companion app for scanner hardware
 cask "doxie"
 # Finds duplicate files in a computer system
-cask "dupeguru"
+# cask "dupeguru"
 # QuickLook generator and Spotlight importer
 cask "epubquicklook"
 # Web browser
@@ -99,25 +92,25 @@ cask "firefox-developer-edition"
 cask "google-chrome"
 # Web browser
 cask "google-chrome-canary"
+# Web browser
+cask "google-chrome-canary"
 # Utility to fix grammar errors and style issues in text
 cask "grammarly"
 # Open-source video transcoder
-cask "handbrake"
+# cask "handbrake"
 # iPhone management application
 cask "imazing"
 # Menu bar calendar
 cask "itsycal"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
-# Provides updates to various Microsoft products
-cask "microsoft-auto-update"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
-cask "mylio"
+# cask "mylio"
 # Finds large, unwanted files and deletes them
-cask "omnidisksweeper"
+# cask "omnidisksweeper"
 # Verify system files structure, run miscellaneous maintenance and more
-cask "onyx"
+# cask "onyx"
 # cask "osxfuse"
 # QuickLook plug-in that renders source code with syntax highlighting
 cask "qlcolorcode"
@@ -135,7 +128,7 @@ cask "quicklookase"
 # Instant messaging application focusing on security
 cask "signal"
 # Video chat, voice call and instant messaging application
-cask "skype"
+# cask "skype"
 # cask "slack"
 # Graphical client for Git version control
 cask "sourcetree"
@@ -143,6 +136,11 @@ cask "sourcetree"
 cask "spotify"
 # Sync and backup service to Synology NAS drives
 cask "synology-drive"
+# Remote access and connectivity software focused on security
+# Move and resize windows with ease
+cask "spectacle"
+# Quicklook extension for source files
+cask "syntax-highlight"
 # Remote access and connectivity software focused on security
 cask "teamviewer"
 # Messaging app with a focus on speed and security

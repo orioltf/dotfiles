@@ -270,6 +270,10 @@ running "adding zsh-highlighting"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ok
 
+running "adding z-zsh"
+git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
+ok
+
 running "making sure ZSH is up to date"
 # the same than calling 'upgrade_oh_my_zsh' in a ZSH environment
 env ZSH=$ZSH /bin/sh $ZSH/tools/upgrade.sh
@@ -309,11 +313,11 @@ popd > /dev/null 2>&1
 # VIM
 ###############################################################################
 
-bot "installing vim plugins"
-# cmake is required to compile vim bundle YouCompleteMe
-# require_brew cmake
-vim +PluginInstall +qall > /dev/null 2>&1
-ok
+#bot "installing vim plugins"
+## cmake is required to compile vim bundle YouCompleteMe
+## require_brew cmake
+#vim +PluginInstall +qall > /dev/null 2>&1
+#ok
 
 
 ###############################################################################

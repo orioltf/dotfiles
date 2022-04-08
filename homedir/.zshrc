@@ -82,30 +82,19 @@ plugins=(
 	docker-compose
 	git
 	git-extras
-#	git-flow
 	git-flow-avh
 	git-prompt
 	github
-	gulp
 	history
-	# jira
 	node
 	npm
 	nvm
 	osx
-	# rvm
-	# terminalapp
-	# vagrant
-	# virtualenv
 	web-search
 	yarn
 	zsh-autosuggestions
-	zsh_reload
-	# zsh-syntax-highlighting
-	z
-#	local_release
-#	new_estatico_git_project
-#	update_from_estatico
+	zsh-z
+	zsh-syntax-highlighting
 )
 
 if type brew &>/dev/null; then

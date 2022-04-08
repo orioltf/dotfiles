@@ -58,3 +58,12 @@ ulimit -n 1024
 export NODE_OPTIONS=--max_old_space_size=2048
 
 
+############################################################################
+# Aliases
+
+## CleanUp (rm)
+# Clean up exited containers (docker < 1.13)
+alias dkrmC='docker rm $(docker ps -qaf status=exited)'
+
+# Clean up dangling images (docker < 1.13)
+alias dkrmI='docker rmi $(docker images -qf dangling=true)'

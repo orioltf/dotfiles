@@ -1,4 +1,4 @@
-# Set vim as default editor (vi is the default otherwise)
+# Set VSCode as default editor (vi is the default otherwise)
 export EDITOR="code"
 bindkey -v
 
