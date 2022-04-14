@@ -140,13 +140,24 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# place this after nvm initialization!
 autoload -U add-zsh-hook
 load-nvmrc() {
-	if [[ -f .nvmrc && -r .nvmrc ]]; then
-		nvm use &> /dev/null
-	elif [[ $(nvm version) != $(nvm version default)  ]]; then
-		nvm use default &> /dev/null
-	fi
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ "$node_version" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
@@ -157,8 +168,8 @@ unsetopt correct
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# To customize prompt, run `p10k configure` or edit ~/.dotfiles/homedir/.p10k.zsh.
+[[ ! -f ~/.dotfiles/homedir/.p10k.zsh ]] || source ~/.dotfiles/homedir/.p10k.zsh
 
 # zsh-syntax-highlighting must be sourced at the end
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
