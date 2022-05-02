@@ -208,3 +208,5 @@
 	trustExitCode = true
 [status]
 	submoduleSummary = true
+[url "https://github.com/"]
+	insteadOf = git://github.com/
