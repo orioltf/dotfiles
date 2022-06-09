@@ -90,7 +90,7 @@ plugins=(
 	node
 	npm
 	nvm
-	osx
+	macos
 	web-search
 	yarn
 	zsh-autosuggestions
