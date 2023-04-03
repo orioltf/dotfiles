@@ -40,17 +40,6 @@ Session.vim
 *~
 
 #########
-# VSCode #
-#########
-.vscode
-.history
-
-#########
-# Webstorm #
-#########
-.idea
-
-#########
 # Maven #
 #########
 target/
