@@ -9,6 +9,8 @@ tap "romkatv/powerlevel10k"
 brew "ack"
 # Shell extension to jump to frequently used directories
 brew "autojump"
+# .NET Core
+brew "dotnet"
 # Identify or delete duplicate files
 brew "fdupes"
 # Play, record, convert, and stream audio and video
@@ -37,8 +39,6 @@ brew "tree"
 brew "vim"
 # Internet file retriever
 brew "wget"
-# JavaScript package manager
-brew "yarn"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Additional completion definitions for zsh
@@ -57,61 +57,74 @@ cask "betterzip"
 cask "brave-browser"
 # Test localhost and staging websites
 cask "browserstacklocal"
-# Web debugging Proxy application
-cask "charles"
 # Clipboard extension app
 cask "clipy"
-# cask "cloudmounter"
 # Multi-platform client-side cloud file encryption tool
 cask "cryptomator"
-# cask "data-rescue"
 # Visually compare and merge files
 cask "diffmerge"
-# Voice and text chat software
-cask "discord"
-# cask "disk-sensei"
 # Tool to build a system install disk
-# cask "diskmaker-x"
+cask "diskmaker-x"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Companion app for scanner hardware
 cask "doxie"
-# Finds duplicate files in a computer system
-# cask "dupeguru"
 # QuickLook generator and Spotlight importer
 cask "epubquicklook"
 # Web browser
 cask "firefox"
 # Web browser
 cask "firefox-developer-edition"
-# cask "forklift"
-# cask "franz"
-# cask "gas-mask"
-# cask "ghostlab"
+# Developer targeted fonts with a high number of glyphs
+cask "font-code-new-roman-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-droid-sans-mono-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-fira-code-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-fira-mono-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-hack-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-inconsolata-go-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-inconsolata-lgc-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-inconsolata-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-jetbrains-mono-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-meslo-lg-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-profont-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-roboto-mono-nerd-font"
 # Web browser
 cask "google-chrome"
 # Web browser
 cask "google-chrome-canary"
-# Web browser
-cask "google-chrome-canary"
-# Utility to fix grammar errors and style issues in text
-cask "grammarly"
-# Open-source video transcoder
-# cask "handbrake"
 # iPhone management application
 cask "imazing"
 # Menu bar calendar
 cask "itsycal"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
+# Software for Logitech devices
+cask "logitech-options"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
+# Office suite
+cask "microsoft-office"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
-# cask "mylio"
+# Photo organizer
+cask "mylio"
+# App to write, plan, collaborate, and get organized
+cask "notion"
 # Finds large, unwanted files and deletes them
-# cask "omnidisksweeper"
+cask "omnidisksweeper"
 # Verify system files structure, run miscellaneous maintenance and more
-# cask "onyx"
-# cask "osxfuse"
+cask "onyx"
 # QuickLook plug-in that renders source code with syntax highlighting
 cask "qlcolorcode"
 # Display image info and preview unsupported formats in QuickLook
@@ -119,26 +132,27 @@ cask "qlimagesize"
 # QuickLook generator for Markdown files
 cask "qlmarkdown"
 cask "qlprettypatch"
+# QuickLook plugin for plaintext files without an extension
 cask "qlstephen"
+# Thumbnails, static previews, cover art and metadata for video files
 cask "qlvideo"
+# QuickLook plugin for CSV files
 cask "quicklook-csv"
+# QuickLook plugin for JSON files
 cask "quicklook-json"
 cask "quicklook-pat"
+# QuickLook generator for Adobe Swatch Exchange files
 cask "quicklookase"
-# Instant messaging application focusing on security
-cask "signal"
-# Video chat, voice call and instant messaging application
-# cask "skype"
-# cask "slack"
+# Team communication and collaboration software
+cask "slack"
 # Graphical client for Git version control
 cask "sourcetree"
+# Move and resize windows with ease
+cask "spectacle"
 # Music streaming service
 cask "spotify"
 # Sync and backup service to Synology NAS drives
 cask "synology-drive"
-# Remote access and connectivity software focused on security
-# Move and resize windows with ease
-cask "spectacle"
 # Quicklook extension for source files
 cask "syntax-highlight"
 # Remote access and connectivity software focused on security
@@ -163,6 +177,7 @@ mas "Microsoft To Do", id: 1274495053
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Polyglot", id: 1471801525
-# mas "SiteSucker", id: 442168834
+mas "SiteSucker", id: 442168834
 mas "Twitter", id: 409789998
+mas "Vectornator Pro", id: 1470168007
 mas "WhatsApp", id: 1147396723
