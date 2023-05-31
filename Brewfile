@@ -50,13 +50,13 @@ brew "zsh-syntax-highlighting"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
 # View, print, and comment on PDF documents
-cask "adobe-acrobat-reader"
+# cask "adobe-acrobat-reader"
 # Application uninstaller
 cask "appcleaner"
 # Utility to create and modify archives
 cask "betterzip"
 # Web browser focusing on privacy
-cask "brave-browser"
+# cask "brave-browser"
 # Test localhost and staging websites
 cask "browserstacklocal"
 # Clipboard extension app
@@ -66,13 +66,13 @@ cask "cryptomator"
 # Visually compare and merge files
 cask "diffmerge"
 # Tool to build a system install disk
-cask "diskmaker-x"
+# cask "diskmaker-x"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Developer platform
 cask "dotnet-sdk"
 # Companion app for scanner hardware
-cask "doxie"
+# cask "doxie"
 # QuickLook generator and Spotlight importer
 cask "epubquicklook"
 # Web browser
@@ -116,15 +116,15 @@ cask "jetbrains-toolbox"
 # Software for Logitech devices
 cask "logitech-options"
 # Provides updates to various Microsoft products
-cask "microsoft-auto-update"
+# cask "microsoft-auto-update"
 # Office suite
-cask "microsoft-office"
+# cask "microsoft-office"
 # Remote desktop client
 # cask "microsoft-remote-desktop"
 # Meet, chat, call, and collaborate in just one place
-cask "microsoft-teams"
+# cask "microsoft-teams"
 # Photo organizer
-cask "mylio"
+# cask "mylio"
 # App to write, plan, collaborate, and get organized
 cask "notion"
 # Finds large, unwanted files and deletes them
@@ -150,7 +150,7 @@ cask "quicklook-pat"
 # QuickLook generator for Adobe Swatch Exchange files
 cask "quicklookase"
 # Team communication and collaboration software
-cask "slack"
+# cask "slack"
 # Graphical client for Git version control
 cask "sourcetree"
 # Move and resize windows with ease
@@ -162,13 +162,11 @@ cask "synology-drive"
 # Quicklook extension for source files
 cask "syntax-highlight"
 # Remote access and connectivity software focused on security
-cask "teamviewer"
+# cask "teamviewer"
 # Messaging app with a focus on speed and security
 cask "telegram"
 # Unpacks archive files
 cask "the-unarchiver"
-# Time tracker
-cask "toggl-track"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
@@ -177,17 +175,17 @@ cask "webpquicklook"
 # JavaScript IDE
 cask "webstorm"
 mas "Enpass", id: 732710998
-mas "Grammarly for Safari", id: 1462114288
-mas "Kindle", id: 405399194
+# mas "Grammarly for Safari", id: 1462114288
+# mas "Kindle", id: 405399194
 mas "Microsoft To Do", id: 1274495053
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Polyglot", id: 1471801525
-mas "SiteSucker", id: 442168834
+# mas "Numbers", id: 409203825
+# mas "Pages", id: 409201541
+# mas "Polyglot", id: 1471801525
+# mas "SiteSucker", id: 442168834
 mas "Toggl Track", id: 1291898086
-mas "Twitter", id: 409789998
-mas "Vectornator Pro", id: 1470168007
-mas "WhatsApp", id: 1147396723
+# mas "Twitter", id: 409789998
+# mas "Vectornator Pro", id: 1470168007
+# mas "WhatsApp", id: 1147396723
 vscode "aaron-bond.better-comments"
 vscode "ahebrank.yaml2json"
 vscode "alefragnani.separators"
