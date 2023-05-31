@@ -2,8 +2,8 @@
 #### Config vars
 
 USERNAME=oriol.torrent
-JIRA=https://jira.unic.com
-JIRAPREFIX=NEWKTBE-
+#JIRA=
+#JIRAPREFIX=
 EDITOR=code
 
 # Set name of the theme to load --- if set to "random", it will
