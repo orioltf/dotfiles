@@ -1,4 +1,4 @@
-# Dot files for FE developers @ Unic
+# Dot files for Frontend Development
 
 Stolen from all around the web :) Thanks Internet! ❤️
 
@@ -62,7 +62,7 @@ Run this 👇 on your new machine's terminal app and follow the instructions the
 > DON'T FORGET TO SWAP THIS REPO BY YOUR FORKED ONE INSTEAD!
 
 ```bash
-git clone --recurse-submodules https://git.unic.com/scm/~oriol.torrent/frontend-dotfiles-oriol.git ~/.dotfiles && cd ~/.dotfiles && ./install.sh
+git clone --recurse-submodules https://github.com/orioltf/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && ./install.sh
 ```
 
 When it finishes reboot the system when the prompt requires so. After the reboot you may see a message like the following in the terminal:
@@ -114,4 +114,4 @@ Contributions are always welcome! Open pull requests with explanatory comments.
 
 ## ¯\\_(ツ)_/¯ Warning / Liability
 
-Neither Unic nor the creator(s) are responsible if your machine ends up in a state you are not happy with. If you are concerned, look at the code to review everything this will do to your machine :)
+The creator(s) are not responsible if your machine ends up in a state you are not happy with. If you are concerned, look at the code to review everything this will do to your machine :)

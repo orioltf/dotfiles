@@ -30,9 +30,9 @@ export LANG=en_US.UTF-8
 
 ############################################################################
 #### CONFIG for Jira ZSH plugin
-JIRA_URL=$JIRA
-JIRA_NAME=$USERNAME
-JIRA_PREFIX=$JIRAPREFIX
+#JIRA_URL=$JIRA
+#JIRA_NAME=$USERNAME
+#JIRA_PREFIX=$JIRAPREFIX
 
 
 ############################################################################
