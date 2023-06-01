@@ -50,23 +50,23 @@ function opinionated_screen() {
 	running "Save screenshots to a folders 'Screenshots' folder in desktop"
 	defaults write com.apple.screencapture location -string "${HOME}/Desktop/Screenshots"
 
-	running "Save screenshots in PNG format"
+	# running "Save screenshots in PNG format"
 	# (other options: BMP, GIF, JPG, PDF, TIFF)
-	defaults write com.apple.screencapture type -string "png"
+	# defaults write com.apple.screencapture type -string "png"
 
 	# running "Disable shadow in screenshots"
 	# defaults write com.apple.screencapture disable-shadow -bool true
 
-	running "Disable Font Smoothing Disabler in macOS Mojave"
+	# running "Disable Font Smoothing Disabler in macOS Mojave"
 	# Reference: https://ahmadawais.com/fix-macos-mojave-font-rendering-issue/
-	defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
+	# defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
 
-	running "Enable HiDPI display modes (requires restart)"
-	sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+	# running "Enable HiDPI display modes (requires restart)"
+	# sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
-	running "Minimum font size for antialiasing"
+	# running "Minimum font size for antialiasing"
 	# default is 4
-	defaults write NSGlobalDomain AppleAntiAliasingThreshold -int 2
+	# defaults write NSGlobalDomain AppleAntiAliasingThreshold -int 2
 }
 
 function opinionated_finder() {
@@ -78,10 +78,10 @@ function opinionated_finder() {
 	# running "Finder: disable window animations and Get Info animations"
 	# defaults write com.apple.finder DisableAllAnimations -bool true
 
-	running "Set Home as the default location for new Finder windows"
+	# running "Set Home as the default location for new Finder windows"
 	# For other paths, use `PfLo` and `file:///full/path/here/`
-	defaults write com.apple.finder NewWindowTarget -string "PfLo"
-	defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Sites/"
+	# defaults write com.apple.finder NewWindowTarget -string "PfLo"
+	# defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Sites/"
 
 	running "Set the Finder prefs for showing a few different volumes on the Desktop"
 	defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
@@ -95,17 +95,17 @@ function opinionated_finder() {
 	running "Finder: show path bar"
 	defaults write com.apple.finder ShowPathbar -bool true
 
-	running "Display full POSIX path as Finder window title"
-	defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+	# running "Display full POSIX path as Finder window title"
+	# defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 	running "Keep folders on top when sorting by name"
 	defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
-	running "When performing a search, search the current folder by default"
-	defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+	# running "When performing a search, search the current folder by default"
+	# defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
-	running "Enable spring loading for directories"
-	defaults write NSGlobalDomain com.apple.springing.enabled -bool true
+	# running "Enable spring loading for directories"
+	# defaults write NSGlobalDomain com.apple.springing.enabled -bool true
 	# running "Remove the spring loading delay for directories"
 	# defaults write NSGlobalDomain com.apple.springing.delay -float 0
 
@@ -131,15 +131,15 @@ function opinionated_finder() {
 	/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 	/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
-	running "Increase grid spacing for icons on the desktop and in other icon views"
-	/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 70" ~/Library/Preferences/com.apple.finder.plist
-	/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:gridSpacing 70" ~/Library/Preferences/com.apple.finder.plist
-	/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:gridSpacing 70" ~/Library/Preferences/com.apple.finder.plist
+	# running "Increase grid spacing for icons on the desktop and in other icon views"
+	# /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 70" ~/Library/Preferences/com.apple.finder.plist
+	# /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:gridSpacing 70" ~/Library/Preferences/com.apple.finder.plist
+	# /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:gridSpacing 70" ~/Library/Preferences/com.apple.finder.plist
 
-	running "Increase the size of icons on the desktop and in other icon views"
-	/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 56" ~/Library/Preferences/com.apple.finder.plist
-	/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 56" ~/Library/Preferences/com.apple.finder.plist
-	/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 56" ~/Library/Preferences/com.apple.finder.plist
+	# running "Increase the size of icons on the desktop and in other icon views"
+	# /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 56" ~/Library/Preferences/com.apple.finder.plist
+	# /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 56" ~/Library/Preferences/com.apple.finder.plist
+	# /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 56" ~/Library/Preferences/com.apple.finder.plist
 
 	running "Use columns view in all Finder windows by default"
 	# Four-letter codes for the other view modes: `icnv`, "Nlsv", `clmv`, `Flwv`
@@ -155,28 +155,28 @@ function opinionated_finder() {
 	# file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
 	# [ -e "${file}" ] && mv -f "${file}" "${file}.bak"
 
-	running "Finder > Preferences > Disable warning before removing from iCloud Drive"
-	defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
+	# running "Finder > Preferences > Disable warning before removing from iCloud Drive"
+	# defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
 }
 
 function opinionated_dock() {
 	bot "Opinionated Dock"
 
-	running "Set the icon size of Dock items to 32 pixels"
-	defaults write com.apple.dock tilesize -int 32
+	# running "Set the icon size of Dock items to 32 pixels"
+	# defaults write com.apple.dock tilesize -int 32
 
-	running "Change minimize/maximize window effect"
+	# running "Change minimize/maximize window effect"
 	# "scale" or "genie"
-	defaults write com.apple.dock mineffect -string "genie"
+	# defaults write com.apple.dock mineffect -string "genie"
 
-	running "Don't minimize windows into their application's icon"
-	defaults write com.apple.dock minimize-to-application -bool false
+	# running "Don't minimize windows into their application's icon"
+	# defaults write com.apple.dock minimize-to-application -bool false
 
-	running "Enable spring loading for all Dock items"
-	defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
+	# running "Enable spring loading for all Dock items"
+	# defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
-	running "Show indicator lights for open applications in the Dock"
-	defaults write com.apple.dock show-process-indicators -bool true
+	# running "Show indicator lights for open applications in the Dock"
+	# defaults write com.apple.dock show-process-indicators -bool true
 
 	running "Wipe all (default) app icons from the Dock"
 	# This is only really useful when setting up a new Mac, or if you don't use
@@ -191,22 +191,22 @@ function opinionated_dock() {
 	# running "Don't animate opening applications from the Dock"
 	# defaults write com.apple.dock launchanim -bool false
 
-	running "Speed up Mission Control animations"
-	defaults write com.apple.dock expose-animation-duration -float 0.1
+	# running "Speed up Mission Control animations"
+	# defaults write com.apple.dock expose-animation-duration -float 0.1
 
-	running "Don't group windows by application in Mission Control"
+	# running "Don't group windows by application in Mission Control"
 	# (i.e. use the old Exposé behavior instead)
-	defaults write com.apple.dock expose-group-by-app -bool false
+	# defaults write com.apple.dock expose-group-by-app -bool false
 
 	# running "Remove the auto-hiding Dock delay"
 	# defaults write com.apple.dock autohide-delay -float 0
 	# running "Remove the animation when hiding/showing the Dock"
 	# defaults write com.apple.dock autohide-time-modifier -float 0
-	running "Set the animation when hiding/showing the Dock"
-	defaults write com.apple.dock autohide-time-modifier -float 0.5
+	# running "Set the animation when hiding/showing the Dock"
+	# defaults write com.apple.dock autohide-time-modifier -float 0.5
 
-	running "Automatically hide and show the Dock"
-	defaults write com.apple.dock autohide -bool true
+	# running "Automatically hide and show the Dock"
+	# defaults write com.apple.dock autohide -bool true
 
 	running "Make Dock icons of hidden applications translucent"
 	defaults write com.apple.dock showhidden -bool true

@@ -26,8 +26,8 @@ function general_ui() {
 	# "(Uncomment if you're on an older Mac that messes up the animation)"
 	# defaults write NSGlobalDomain NSScrollAnimationEnabled -bool false
 
-	running "Increase window resize speed for Cocoa applications"
-	defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+	# running "Increase window resize speed for Cocoa applications"
+	# defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
 	running "Expand save panel by default"
 	defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -74,9 +74,9 @@ function general_ui() {
 	running "Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window"
 	sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName IPAddress
 
-	running "Add in some text to appear on the Login Window"
+	# running "Add in some text to appear on the Login Window"
 	# To remove the message: sudo defaults delete /Library/Preferences/com.apple.loginwindow LoginwindowText
-	sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string “$LOGIN_WINDOW_TEXT”
+	# sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string “$LOGIN_WINDOW_TEXT”
 
 	# running "Disable Notification Center and remove the menu bar icon"
 	# launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
@@ -95,16 +95,16 @@ function general_ui() {
 
 	# running "Disable auto-correct"
 	# defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
-	running "Enable auto-correct"
-	defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool true
+	# running "Enable auto-correct"
+	# defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool true
 
 
 	###############################################################################
-	bot "SSD-specific tweaks"
+	# bot "SSD-specific tweaks"
 	###############################################################################
 
-	running "Disable the sudden motion sensor as it's not useful for SSDs"
-	sudo pmset -a sms 0
+	# running "Disable the sudden motion sensor as it's not useful for SSDs"
+	# sudo pmset -a sms 0
 
 
 	###############################################################################
@@ -125,8 +125,8 @@ function general_ui() {
 	running "Enable 'natural' (Lion-style) scrolling"
 	defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
-	running "Increase sound quality for Bluetooth headphones/headsets"
-	defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+	# running "Increase sound quality for Bluetooth headphones/headsets"
+	# defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 	running "Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)"
 	defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
@@ -147,13 +147,13 @@ function general_ui() {
 	# running "Set language and text formats"
 	# Note: if you're in the US, replace `EUR` with `USD`, `Centimeters` with
 	# `Inches`, `en_GB` with `en_US`, and `true` with `false`.
-	defaults write -g AppleLanguages -array "en-CH"
-	defaults write -g AppleLocale -string "en_CHB@currency=CHF"
-	defaults write -g AppleMeasurementUnits -string "Centimeters"
-	defaults write -g AppleMetricUnits -bool true
+	# defaults write -g AppleLanguages -array "en-CH"
+	# defaults write -g AppleLocale -string "en_CHB@currency=CHF"
+	# defaults write -g AppleMeasurementUnits -string "Centimeters"
+	# defaults write -g AppleMetricUnits -bool true
 
-	running "Show language menu in the top right corner of the boot screen"
-	sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
+	# running "Show language menu in the top right corner of the boot screen"
+	# sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
 	running "Set the timezone"
 	# see systemsetup -listtimezones for other values
@@ -174,14 +174,14 @@ function general_ui() {
 	defaults write com.apple.AppleMultitouchTrackpad Dragging -bool false
 	defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool false
 
-	running "Automatically illuminate built-in MacBook keyboard in low light"
-	defaults write com.apple.BezelServices kDim -bool true
+	# running "Automatically illuminate built-in MacBook keyboard in low light"
+	# defaults write com.apple.BezelServices kDim -bool true
 
-	running "Turn off keyboard illumination when computer is not used for 5 minutes"
-	defaults write com.apple.BezelServices kDimTime -int 300
+	# running "Turn off keyboard illumination when computer is not used for 5 minutes"
+	# defaults write com.apple.BezelServices kDimTime -int 300
 
-	running "System Preferences > General > Click in the scrollbar to: Jump to the spot that's clicked"
-	defaults write -globalDomain "AppleScrollerPagingBehavior" -bool true
+	# running "System Preferences > General > Click in the scrollbar to: Jump to the spot that's clicked"
+	# defaults write -globalDomain "AppleScrollerPagingBehavior" -bool true
 }
 
 function general_energy() {
@@ -249,8 +249,8 @@ function general_finder() {
 	OpenWith -bool true \
 	Privileges -bool true
 
-	running "Get Quicklook plugins working in Catalina: remove the quarantine attribute"
-	xattr -d -r com.apple.quarantine ~/Library/QuickLook
+	# running "Get Quicklook plugins working in Catalina: remove the quarantine attribute"
+	# xattr -d -r com.apple.quarantine ~/Library/QuickLook
 
 	running "Enable text selection in quicklook"
 	defaults write com.apple.finder QLEnableTextSelection -bool true
@@ -259,17 +259,17 @@ function general_finder() {
 function general_dock() {
 	bot "General Dock"
 
-	running "Disable Dashboard"
-	defaults write com.apple.dashboard mcx-disabled -boolean true
+	# running "Disable Dashboard"
+	# defaults write com.apple.dashboard mcx-disabled -boolean true
 
-	running "Don't show Dashboard as a Space"
-	defaults write com.apple.dock dashboard-in-overlay -bool true
+	# running "Don't show Dashboard as a Space"
+	# defaults write com.apple.dock dashboard-in-overlay -bool true
 
-	running "Enable highlight hover effect for the grid view of a stack (Dock)"
-	defaults write com.apple.dock mouse-over-hilite-stack -bool true
+	# running "Enable highlight hover effect for the grid view of a stack (Dock)"
+	# defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
-	running "Don't automatically rearrange Spaces based on most recent use"
-	defaults write com.apple.dock mru-spaces -bool false
+	# running "Don't automatically rearrange Spaces based on most recent use"
+	# defaults write com.apple.dock mru-spaces -bool false
 }
 
 function general_safari() {
