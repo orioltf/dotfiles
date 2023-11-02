@@ -1,9 +1,6 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "romkatv/powerlevel10k"
 # Shell extension to jump to frequently used directories
 brew "autojump"
@@ -11,28 +8,24 @@ brew "autojump"
 brew "dotnet@6"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# Distributed revision control system
-brew "git"
 # AVH edition of git-flow
 brew "git-flow-avh"
 # Mac App Store command-line interface
 brew "mas"
 # Platform built on V8 to build network applications
 brew "node"
+# Theme for zsh
+brew "powerlevel10k"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Vi 'workalike' with many additional features
 brew "vim"
 # Internet file retriever
 brew "wget"
-# UNIX shell (command interpreter)
-brew "zsh"
 # Additional completion definitions for zsh
 brew "zsh-completions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# A Zsh Theme
-brew "romkatv/powerlevel10k/powerlevel10k"
 # Application uninstaller
 cask "appcleaner"
 # Utility to create and modify archives
@@ -102,6 +95,8 @@ cask "itsycal"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
 # Software for Logitech devices
+cask "logi-options-plus"
+# Software for Logitech devices
 cask "logitech-options"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
@@ -117,10 +112,13 @@ cask "notion"
 cask "omnidisksweeper"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
+# Collaboration platform for API development
+cask "postman"
 # Display image info and preview unsupported formats in QuickLook
 cask "qlimagesize"
 # QuickLook generator for Markdown files
 cask "qlmarkdown"
+# QuickLook plugin to view patch files
 cask "qlprettypatch"
 # Thumbnails, static previews, cover art and metadata for video files
 cask "qlvideo"
@@ -149,6 +147,7 @@ cask "the-unarchiver"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+# QuickLook plugin for webp files
 cask "webpquicklook"
 # JavaScript IDE
 cask "webstorm"
@@ -198,6 +197,8 @@ vscode "mikestead.dotenv"
 vscode "ms-azure-devops.azure-pipelines"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-dotnettools.csharp"
+vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
 vscode "ms-vscode.azure-account"
