@@ -107,7 +107,8 @@ fi
 
 
 source $ZSH/oh-my-zsh.sh
-source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
+# source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
+source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
@@ -183,4 +184,6 @@ source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/usr/local/opt/dotnet@6/bin:$PATH"
+export PATH="/opt/homebrew/opt/dotnet@6/bin:$PATH"
+export DOTNET_ROOT="/opt/homebrew/opt/dotnet@6/libexec"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
