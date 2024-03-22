@@ -28,6 +28,8 @@ brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 # Application uninstaller
 cask "appcleaner"
+# Chromium based browser
+cask "arc"
 # Utility to create and modify archives
 cask "betterzip"
 # Web browser focusing on privacy
@@ -42,7 +44,7 @@ cask "cryptomator"
 cask "diffmerge"
 # Tool to build a system install disk
 # cask "diskmaker-x"
-# App to build and share containerized applications and microservices
+# App to build and share containerised applications and microservices
 cask "docker"
 # Developer platform
 cask "dotnet-sdk"
@@ -94,19 +96,15 @@ cask "imazing"
 cask "itsycal"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
-# Software for Logitech devices
-cask "logi-options-plus"
-# Software for Logitech devices
-cask "logitech-options"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
+# Web browser
+cask "microsoft-edge"
 # Office suite
 cask "microsoft-office"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
-# Photo organizer
-# cask "mylio"
-# App to write, plan, collaborate, and get organized
+# App to write, plan, collaborate, and get organised
 cask "notion"
 # Finds large, unwanted files and deletes them
 cask "omnidisksweeper"
@@ -116,21 +114,23 @@ cask "onyx"
 cask "postman"
 # Display image info and preview unsupported formats in QuickLook
 cask "qlimagesize"
-# QuickLook generator for Markdown files
+# Quick Look generator for Markdown files
 cask "qlmarkdown"
-# QuickLook plugin to view patch files
+# Quick Look plugin to view patch files
 cask "qlprettypatch"
 # Thumbnails, static previews, cover art and metadata for video files
 cask "qlvideo"
-# QuickLook plugin for CSV files
+# Quick Look plugin for CSV files
 cask "quicklook-csv"
-# QuickLook plugin for JSON files
+# Quick Look plugin for JSON files
 cask "quicklook-json"
 cask "quicklook-pat"
-# QuickLook generator for Adobe Swatch Exchange files
+# Quick Look generator for Adobe Swatch Exchange files
 cask "quicklookase"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Microsofts instant messaging enterprise software
+# cask "skype-for-business"
 # Graphical client for Git version control
 cask "sourcetree"
 # Music streaming service
@@ -143,15 +143,19 @@ cask "syntax-highlight"
 cask "telegram"
 # Unpacks archive files
 cask "the-unarchiver"
+# Virtual machines UI using QEMU
+cask "utm"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-# QuickLook plugin for webp files
+# Quick Look plugin for webp files
 cask "webpquicklook"
 # JavaScript IDE
 cask "webstorm"
+mas "Calendars", id: 608834326
 mas "Enpass", id: 732710998
+mas "hide.me VPN", id: 953040671
 # mas "Grammarly for Safari", id: 1462114288
 # mas "Kindle", id: 405399194
 mas "Microsoft To Do", id: 1274495053
@@ -162,19 +166,22 @@ mas "Microsoft To Do", id: 1274495053
 mas "Toggl Track", id: 1291898086
 # mas "Twitter", id: 409789998
 # mas "Vectornator Pro", id: 1470168007
-# mas "WhatsApp", id: 1147396723
+mas "‎WhatsApp", id: 310633997
 vscode "aaron-bond.better-comments"
 vscode "ahebrank.yaml2json"
+vscode "alefragnani.bookmarks"
 vscode "alefragnani.separators"
 vscode "alexkrechik.cucumberautocomplete"
 vscode "be5invis.toml"
-vscode "BriteSnow.vscode-toggle-quotes"
-vscode "ChakrounAnas.turbo-console-log"
+vscode "britesnow.vscode-toggle-quotes"
+vscode "cardinal90.multi-cursor-case-preserve"
+vscode "chakrounanas.turbo-console-log"
 vscode "christian-kohler.npm-intellisense"
 vscode "christian-kohler.path-intellisense"
 vscode "clinyong.vscode-css-modules"
-vscode "CodeSandbox-io.codesandbox-projects"
+vscode "codesandbox-io.codesandbox-projects"
 vscode "codezombiech.gitignore"
+vscode "codium.codium"
 vscode "csstools.postcss"
 vscode "dbaeumer.vscode-eslint"
 vscode "diegofn.vscode-uriencode"
@@ -183,21 +190,26 @@ vscode "donjayamanne.githistory"
 vscode "dsznajder.es7-react-js-snippets"
 vscode "eamodio.gitlens"
 vscode "ecmel.vscode-html-css"
-vscode "EditorConfig.EditorConfig"
+vscode "editorconfig.editorconfig"
 vscode "esbenp.prettier-vscode"
 vscode "felipecaputo.git-project-manager"
 vscode "formulahendry.auto-close-tag"
-vscode "GitHub.remotehub"
-vscode "IBM.output-colorizer"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "github.remotehub"
+vscode "graphql.vscode-graphql"
+vscode "graphql.vscode-graphql-syntax"
+vscode "gruntfuggly.todo-tree"
+vscode "ibm.output-colorizer"
 vscode "kisstkondoros.vscode-codemetrics"
-vscode "MelodicDevelopment.azure-work-management"
+vscode "mechatroner.rainbow-csv"
+vscode "melodicdevelopment.azure-work-management"
 vscode "mhutchie.git-graph"
 vscode "michelemelluso.gitignore"
 vscode "mikestead.dotenv"
+vscode "mohsen1.react-javascript-to-typescript-transform-vscode"
 vscode "ms-azure-devops.azure-pipelines"
 vscode "ms-azuretools.vscode-docker"
-vscode "ms-dotnettools.csharp"
-vscode "ms-dotnettools.vscode-dotnet-runtime"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
@@ -210,28 +222,35 @@ vscode "ms-vsliveshare.vsliveshare"
 vscode "muhajirframe.vscode-react-emotion"
 vscode "naumovs.theme-oceanicnext"
 vscode "nhoizey.gremlins"
-vscode "NuclleaR.vscode-extension-auto-import"
+vscode "nucllear.vscode-extension-auto-import"
 vscode "oderwat.indent-rainbow"
-vscode "Orta.vscode-jest"
+vscode "orta.vscode-jest"
 vscode "pflannery.vscode-versionlens"
 vscode "piotr-porzuczek.jest-cucumber-code-generator-extension"
-vscode "PKief.material-icon-theme"
+vscode "pkief.material-icon-theme"
+vscode "pomdtr.excalidraw-editor"
 vscode "pranaygp.vscode-css-peek"
 vscode "quicktype.quicktype"
+vscode "rangav.vscode-thunder-client"
 vscode "redhat.vscode-yaml"
 vscode "sodatea.velocity"
 vscode "steoates.autoimport"
+vscode "streetsidesoftware.code-spell-checker"
 vscode "syler.sass-indented"
+vscode "tabnine.tabnine-vscode"
 vscode "timkmecl.chatgpt"
 vscode "tinkertrain.theme-panda"
+vscode "usernamehw.errorlens"
 vscode "vector-of-bool.gitflow"
 vscode "vincaslt.highlight-matching-tag"
-vscode "VisualStudioExptTeam.intellicode-api-usage-examples"
-vscode "VisualStudioExptTeam.vscodeintellicode"
+vscode "visualstudioexptteam.intellicode-api-usage-examples"
+vscode "visualstudioexptteam.vscodeintellicode"
 vscode "vivaxy.vscode-conventional-commits"
 vscode "vunguyentuan.vscode-postcss"
-vscode "WilsonWong.caniuse-query"
+vscode "wallabyjs.console-ninja"
+vscode "wayou.vscode-todo-highlight"
+vscode "wilsonwong.caniuse-query"
 vscode "wix.vscode-import-cost"
-vscode "xabikos.JavaScriptSnippets"
+vscode "xabikos.javascriptsnippets"
 vscode "xyz.local-history"
-vscode "Zignd.html-css-class-completion"
+vscode "zignd.html-css-class-completion"
