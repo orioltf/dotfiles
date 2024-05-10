@@ -49,7 +49,7 @@ if [[ ! -e "$work_dir" ]]; then
 	mkdir $work_dir
 	ok
 else
-	info "Already created"
+	info "Work directory already exists"
 fi
 
 running "Creating $tools_dir..."
@@ -57,7 +57,27 @@ if [[ ! -e "$tools_dir" ]]; then
 	mkdir $tools_dir
 	ok
 else
-	info "Already created"
+	info "Tools directory already exists"
+fi
+
+running "Creating $personal_dir..."
+if [[ ! -e "$personal_dir" ]]; then
+	mkdir $personal_dir
+	sudo cp ./configs/.gitconfig-personal $personal_dir/.gitconfig-personal
+	ok
+else
+	info "Personal directory already exists"
+	running "Checking and/or creating .gitconfig-personal file"
+	if [[ -e "$personal_dir/.gitconfig-personal" ]]; then
+		info ".gitconfig-personal file already exists"
+	else
+		if [[ -e "./configs/.gitconfig-personal" ]]; then
+			info "Copying .gitconfig-personal file"
+			sudo cp ./configs/.gitconfig-personal $personal_dir/.gitconfig-personal
+		else
+			error "No .gitconfig-personal file found"
+		fi
+	fi
 fi
 
 running "Creating $nvm_dir..."
@@ -65,7 +85,7 @@ if [[ ! -e "$nvm_dir" ]]; then
 	mkdir $nvm_dir
 	ok
 else
-	info "Already created"
+	info "NVM directory already exists"
 fi
 
 
