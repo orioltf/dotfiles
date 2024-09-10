@@ -23,6 +23,9 @@ source ~/.profile
 ################################################################
 
 
+################################################################
+# Setup ZSH: Start
+################################################################
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.dotfiles/oh-my-zsh
 
@@ -105,14 +108,14 @@ plugins=(
 	zsh-syntax-highlighting
 )
 
-if type brew &>/dev/null; then
-	FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+# Setup zsh autocorrection
+unsetopt correct
+################################################################
+# Setup ZSH: End
+################################################################
 
-	autoload -Uz compinit
-	compinit
-fi
 
-
+################################################################
 source $ZSH/oh-my-zsh.sh
 # source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
