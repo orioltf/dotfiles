@@ -228,8 +228,15 @@ load-nvmrc
 ################################################################
 
 
+################################################################
+# ZSH syntax highlighting: Start
 # zsh-syntax-highlighting must be sourced at the end
+################################################################
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+################################################################
+# ZSH syntax highlighting: End
+################################################################
+
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/usr/local/opt/dotnet@6/bin:$PATH"
