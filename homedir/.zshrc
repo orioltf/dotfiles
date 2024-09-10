@@ -156,30 +156,26 @@ FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
 
 ################################################################
+# Source oh-my-zsh framework: Start
+################################################################
 source $ZSH/oh-my-zsh.sh
 # source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
+################################################################
+# Source oh-my-zsh framework: End
+################################################################
 
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# User configuration
+################################################################
+# P10k: Start
+################################################################
+# To customize prompt, run `p10k configure` or edit ~/.dotfiles/homedir/.p10k.zsh.
+[[ ! -f ~/.dotfiles/homedir/.p10k.zsh ]] || source ~/.dotfiles/homedir/.p10k.zsh
+################################################################
+# P10k: End
+################################################################
 
-# export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; thenq
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
