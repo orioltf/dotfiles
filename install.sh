@@ -238,16 +238,9 @@ ok
 
 bot "setting zsh as the user login shell"
 CURRENTSHELL=$(dscl . -read /Users/$USER UserShell | awk '{print $2}')
-if [[ "$CURRENTSHELL" != "/usr/local/bin/zsh" ]]; then
-	bot "setting newer homebrew zsh (/usr/local/bin/zsh) as your shell (password required)"
-	# sudo bash -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
-	# chsh -s /usr/local/bin/zsh
-
-    # For Macos 10.14 Mohave:
-    # sudo dscl . -change /Users/$USER UserShell $SHELL /usr/local/bin/zsh > /dev/null 2>&1
-
-    # For Macos 10.15 Catalina:
-    sudo chsh -s /bin/zsh
+if [[ "$CURRENTSHELL" != "/bin/zsh" ]]; then
+	bot "setting zsh as your shell (password required)"
+	sudo chsh -s /bin/zsh
 	ok
 fi
 
