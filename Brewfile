@@ -4,6 +4,8 @@ tap "homebrew/cask-versions"
 tap "romkatv/powerlevel10k"
 # Shell extension to jump to frequently used directories
 brew "autojump"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # .NET Core
 brew "dotnet@6"
 # Command-line fuzzy finder written in Go
@@ -14,8 +16,12 @@ brew "git-flow-avh"
 brew "mas"
 # Platform built on V8 to build network applications
 brew "node"
+# Modern shell for the GitHub era
+brew "nushell"
 # Theme for zsh
 brew "powerlevel10k"
+# Interpreted, interactive, object-oriented programming language
+# brew "python@3.12"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Vi 'workalike' with many additional features
@@ -37,7 +43,7 @@ cask "betterzip"
 # Web browser focusing on privacy
 # cask "brave-browser"
 # Test localhost and staging websites
-cask "browserstacklocal"
+# cask "browserstacklocal"
 # Clipboard extension app
 cask "clipy"
 # Multi-platform client-side cloud file encryption tool
@@ -46,6 +52,8 @@ cask "cryptomator"
 cask "diffmerge"
 # Tool to build a system install disk
 # cask "diskmaker-x"
+# Data recovery software
+cask "disk-drill"
 # App to build and share containerised applications and microservices
 cask "docker"
 # Developer platform
@@ -53,51 +61,36 @@ cask "dotnet-sdk"
 # Web browser
 cask "firefox"
 # Web browser
-cask "firefox-developer-edition"
-# Developer targeted fonts with a high number of glyphs
+cask "firefox@developer-edition"
 cask "font-caskaydia-cove-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-code-new-roman-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-droid-sans-mono-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-fantasque-sans-mono-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-fira-code-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-fira-mono-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-hasklug-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-inconsolata-go-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-inconsolata-lgc-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-inconsolata-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-meslo-lg-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-monoid-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-profont-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-roboto-mono-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-victor-mono-nerd-font"
 # Web browser
 cask "google-chrome"
 # Web browser
-cask "google-chrome-canary"
+cask "google-chrome@canary"
 # iPhone management application
 cask "imazing"
 # Menu bar calendar
 cask "itsycal"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
+# Menu bar manager
+cask "jordanbaird-ice"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Web browser
@@ -112,6 +105,8 @@ cask "notion"
 cask "omnidisksweeper"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
+# Utility to uninstall apps and remove leftover files from old/uninstalled apps
+cask "pearcleaner"
 # Collaboration platform for API development
 cask "postman"
 # Display image info and preview unsupported formats in QuickLook
@@ -137,6 +132,8 @@ cask "rectangle"
 cask "sourcetree"
 # Music streaming service
 cask "spotify"
+# System monitor for the menu bar
+cask "stats"
 # Sync and backup service to Synology NAS drives
 cask "synology-drive"
 # Quicklook extension for source files
@@ -151,31 +148,28 @@ cask "utm"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+# Remote desktop application focusing on security
+# cask "vnc-viewer"
 # Rust-based terminal
 cask "warp"
 # Quick Look plugin for webp files
 cask "webpquicklook"
 # JavaScript IDE
 cask "webstorm"
+# Gecko based web browser
+cask "zen-browser"
 mas "Calendars", id: 608834326
 mas "Enpass", id: 732710998
 mas "hide.me VPN", id: 953040671
-# mas "Grammarly for Safari", id: 1462114288
-# mas "Kindle", id: 405399194
 mas "Microsoft To Do", id: 1274495053
-# mas "Numbers", id: 409203825
-# mas "Pages", id: 409201541
-# mas "Polyglot", id: 1471801525
-# mas "SiteSucker", id: 442168834
 mas "Toggl Track", id: 1291898086
-# mas "Twitter", id: 409789998
-# mas "Vectornator Pro", id: 1470168007
 mas "‎WhatsApp", id: 310633997
 vscode "aaron-bond.better-comments"
 vscode "ahebrank.yaml2json"
 vscode "alefragnani.bookmarks"
 vscode "alefragnani.separators"
 vscode "alexkrechik.cucumberautocomplete"
+vscode "astro-build.astro-vscode"
 vscode "be5invis.toml"
 vscode "britesnow.vscode-toggle-quotes"
 vscode "cardinal90.multi-cursor-case-preserve"
@@ -216,6 +210,7 @@ vscode "michelemelluso.gitignore"
 vscode "mikestead.dotenv"
 vscode "mohsen1.react-javascript-to-typescript-transform-vscode"
 vscode "ms-azure-devops.azure-pipelines"
+vscode "ms-azuretools.vscode-azureresourcegroups"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode-remote.remote-ssh"
@@ -249,6 +244,7 @@ vscode "tabnine.tabnine-vscode"
 vscode "tiansin.logtail"
 vscode "timkmecl.chatgpt"
 vscode "tinkertrain.theme-panda"
+vscode "tommasov.hosts"
 vscode "usernamehw.errorlens"
 vscode "vector-of-bool.gitflow"
 vscode "vincaslt.highlight-matching-tag"
