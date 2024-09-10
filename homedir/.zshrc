@@ -185,7 +185,13 @@ source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 ################################################################
 
 
+################################################################
+# NVM: Start
+################################################################
 # https://github.com/nvm-sh/nvm#zsh
+# place this after nvm initialization!
+autoload -U add-zsh-hook
+
 load-nvmrc() {
   local nvmrc_path
   nvmrc_path="$(nvm_find_nvmrc)"
@@ -207,20 +213,11 @@ load-nvmrc() {
 
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+################################################################
+# NVM: End
+################################################################
 
-# place this after nvm initialization!
-autoload -U add-zsh-hook
 
-# Customize to your needs...
-unsetopt correct
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
-# To customize prompt, run `p10k configure` or edit ~/.dotfiles/homedir/.p10k.zsh.
-[[ ! -f ~/.dotfiles/homedir/.p10k.zsh ]] || source ~/.dotfiles/homedir/.p10k.zsh
-
-# VSCode shell integration: https://code.visualstudio.com/docs/terminal/shell-integration#_manual-installation
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
 
 # zsh-syntax-highlighting must be sourced at the end
