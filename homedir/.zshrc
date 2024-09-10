@@ -218,7 +218,15 @@ load-nvmrc
 ################################################################
 
 
+################################################################
+# VSCode shell integration: Start
+# https://code.visualstudio.com/docs/terminal/shell-integration#_manual-installation
+################################################################
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+################################################################
+# VSCode shell integration: End
+################################################################
+
 
 # zsh-syntax-highlighting must be sourced at the end
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
