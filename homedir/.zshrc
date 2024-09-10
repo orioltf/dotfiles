@@ -243,3 +243,5 @@ export PATH="/usr/local/opt/dotnet@6/bin:$PATH"
 export PATH="/opt/homebrew/opt/dotnet@6/bin:$PATH"
 export DOTNET_ROOT="/opt/homebrew/opt/dotnet@6/libexec"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+PATH=~/.console-ninja/.bin:$PATH
