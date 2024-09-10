@@ -116,6 +116,46 @@ unsetopt correct
 
 
 ################################################################
+# FZF: Start
+################################################################
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+################################################################
+# FZF: End
+################################################################
+
+
+################################################################
+# Brew completions: Start
+################################################################
+# https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
+# Configuring Completions in zsh
+# To make Homebrew’s completions available in zsh, you must insert the Homebrew-managed zsh/site-functions path into your FPATH before initialising zsh’s completion facility. Add the following to your ~/.zshrc:
+
+# if type brew &>/dev/null
+# then
+#   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+#   autoload -Uz compinit
+#   compinit
+# fi
+# This must be done before compinit is called. Note that if you are using Oh My Zsh, it will call compinit for you when you source oh-my-zsh.sh. In this case, instead of the above, add the following line to your ~/.zshrc, before you source oh-my-zsh.sh:
+
+# FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+# You may also need to forcibly rebuild zcompdump:
+
+# rm -f ~/.zcompdump; compinit
+# Additionally, if you receive “zsh compinit: insecure directories” warnings when attempting to load these completions, you may need to run this:
+
+# chmod -R go-w "$(brew --prefix)/share"
+
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+################################################################
+# Brew completions: End
+################################################################
+
+
+################################################################
 source $ZSH/oh-my-zsh.sh
 # source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
