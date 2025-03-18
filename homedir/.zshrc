@@ -1,18 +1,16 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-	source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+# 	source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
 # This sets up colors properly
 export TERM="xterm-256color"
+export CLICOLOR=1
 
 # set shell
 export SHELL=/bin/zsh
-
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 ################################################################
 # Custom profile: Start
@@ -101,6 +99,7 @@ plugins=(
 	npm
 	nvm
 	macos
+	thefuck
 	web-search
 	yarn
 	zsh-autosuggestions
@@ -160,7 +159,7 @@ FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 ################################################################
 source $ZSH/oh-my-zsh.sh
 # source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
-source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
+# source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 ################################################################
 # Source oh-my-zsh framework: End
 ################################################################
@@ -170,7 +169,7 @@ source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 # P10k: Start
 ################################################################
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/homedir/.p10k.zsh.
-[[ ! -f ~/.dotfiles/homedir/.p10k.zsh ]] || source ~/.dotfiles/homedir/.p10k.zsh
+# [[ ! -f ~/.dotfiles/homedir/.p10k.zsh ]] || source ~/.dotfiles/homedir/.p10k.zsh
 ################################################################
 # P10k: End
 ################################################################
@@ -244,4 +243,12 @@ export PATH="/opt/homebrew/opt/dotnet@6/bin:$PATH"
 export DOTNET_ROOT="/opt/homebrew/opt/dotnet@6/libexec"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-PATH=~/.console-ninja/.bin:$PATH
+
+
+# Activate oh-my-posh, should be the last line
+eval "$(oh-my-posh init zsh --config ~/.dotfiles/configs/ort.omp.json)"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/oriol.torrent/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
