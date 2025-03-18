@@ -1,6 +1,8 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
+tap "jandedobbeleer/oh-my-posh"
+tap "powershell/tap"
 tap "romkatv/powerlevel10k"
 # Shell extension to jump to frequently used directories
 brew "autojump"
@@ -12,6 +14,10 @@ brew "dotnet@6"
 brew "fzf"
 # AVH edition of git-flow
 brew "git-flow-avh"
+# Lazier way to manage everything docker
+brew "lazydocker"
+# Simple terminal UI for git commands
+brew "lazygit"
 # Mac App Store command-line interface
 brew "mas"
 # Platform built on V8 to build network applications
@@ -22,10 +28,16 @@ brew "nushell"
 brew "powerlevel10k"
 # Interpreted, interactive, object-oriented programming language
 # brew "python@3.12"
+# Command-line packet analyzer
+brew "tcpdump"
+# Programmatically correct mistyped console commands
+brew "thefuck"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Vi 'workalike' with many additional features
 brew "vim"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
 # Internet file retriever
 brew "wget"
 # JavaScript package manager
@@ -34,6 +46,10 @@ brew "yarn"
 brew "zsh-completions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Prompt theme engine for any shell
+brew "jandedobbeleer/oh-my-posh/oh-my-posh"
+# Formula to install PowerShell
+brew "powershell/tap/powershell"
 # Application uninstaller
 cask "appcleaner"
 # Chromium based browser
@@ -41,13 +57,15 @@ cask "arc"
 # Utility to create and modify archives
 cask "betterzip"
 # Web browser focusing on privacy
-# cask "brave-browser"
+cask "brave-browser"
 # Test localhost and staging websites
 # cask "browserstacklocal"
 # Clipboard extension app
 cask "clipy"
 # Multi-platform client-side cloud file encryption tool
 cask "cryptomator"
+# Write, edit, and chat about your code with AI
+cask "cursor"
 # Visually compare and merge files
 cask "diffmerge"
 # Tool to build a system install disk
@@ -79,6 +97,8 @@ cask "font-monoid-nerd-font"
 cask "font-profont-nerd-font"
 cask "font-roboto-mono-nerd-font"
 cask "font-victor-mono-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Web browser
 cask "google-chrome"
 # Web browser
@@ -93,7 +113,7 @@ cask "jetbrains-toolbox"
 cask "jordanbaird-ice"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
-# Web browser
+# Multi-platform web browser
 cask "microsoft-edge"
 # Office suite
 cask "microsoft-office"
@@ -121,6 +141,7 @@ cask "qlvideo"
 cask "quicklook-csv"
 # Quick Look plugin for JSON files
 cask "quicklook-json"
+# Quick Look plugin for Adobe Photoshop pattern files
 cask "quicklook-pat"
 # Quick Look generator for Adobe Swatch Exchange files
 cask "quicklookase"
@@ -163,14 +184,16 @@ mas "Enpass", id: 732710998
 mas "hide.me VPN", id: 953040671
 mas "Microsoft To Do", id: 1274495053
 mas "Toggl Track", id: 1291898086
-mas "‎WhatsApp", id: 310633997
+mas "WhatsApp", id: 310633997
 vscode "aaron-bond.better-comments"
 vscode "ahebrank.yaml2json"
 vscode "alefragnani.bookmarks"
 vscode "alefragnani.separators"
 vscode "alexkrechik.cucumberautocomplete"
 vscode "astro-build.astro-vscode"
+vscode "aykutsarac.jsoncrack-vscode"
 vscode "be5invis.toml"
+vscode "bradlc.vscode-tailwindcss"
 vscode "britesnow.vscode-toggle-quotes"
 vscode "cardinal90.multi-cursor-case-preserve"
 vscode "chakrounanas.turbo-console-log"
@@ -189,6 +212,7 @@ vscode "dsznajder.es7-react-js-snippets"
 vscode "eamodio.gitlens"
 vscode "ecmel.vscode-html-css"
 vscode "editorconfig.editorconfig"
+vscode "edwinhuish.better-comments-next"
 vscode "emilast.logfilehighlighter"
 vscode "esbenp.prettier-vscode"
 vscode "felipecaputo.git-project-manager"
@@ -202,11 +226,18 @@ vscode "graphql.vscode-graphql-syntax"
 vscode "gruntfuggly.todo-tree"
 vscode "ibm.output-colorizer"
 vscode "iliazeus.vscode-ansi"
+vscode "juanallo.vscode-dependency-cruiser"
+vscode "k--kato.intellij-idea-keybindings"
 vscode "kisstkondoros.vscode-codemetrics"
+vscode "lovebird.better-comments-enhanced"
 vscode "mechatroner.rainbow-csv"
+vscode "meganrogge.template-string-converter"
 vscode "melodicdevelopment.azure-work-management"
+vscode "mguellsegarra.highlight-on-copy"
 vscode "mhutchie.git-graph"
 vscode "michelemelluso.gitignore"
+vscode "miguelsolorio.fluent-icons"
+vscode "miguelsolorio.symbols"
 vscode "mikestead.dotenv"
 vscode "mohsen1.react-javascript-to-typescript-transform-vscode"
 vscode "ms-azure-devops.azure-pipelines"
@@ -215,13 +246,14 @@ vscode "ms-azuretools.vscode-docker"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
-vscode "ms-vscode.azure-account"
 vscode "ms-vscode.azure-repos"
 vscode "ms-vscode.live-server"
+vscode "ms-vscode.powershell"
 vscode "ms-vscode.remote-explorer"
 vscode "ms-vscode.remote-repositories"
 vscode "ms-vsliveshare.vsliveshare"
 vscode "muhajirframe.vscode-react-emotion"
+vscode "mylesmurphy.prettify-ts"
 vscode "naumovs.theme-oceanicnext"
 vscode "nhoizey.gremlins"
 vscode "nucllear.vscode-extension-auto-import"
@@ -235,12 +267,15 @@ vscode "pranaygp.vscode-css-peek"
 vscode "quicktype.quicktype"
 vscode "rangav.vscode-thunder-client"
 vscode "redhat.vscode-yaml"
+vscode "rsbondi.highlight-words"
 vscode "sodatea.velocity"
 vscode "sourcegraph.cody-ai"
 vscode "steoates.autoimport"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "syler.sass-indented"
+vscode "sz-p.dependencygraph"
 vscode "tabnine.tabnine-vscode"
+vscode "teabyii.ayu"
 vscode "tiansin.logtail"
 vscode "timkmecl.chatgpt"
 vscode "tinkertrain.theme-panda"
@@ -252,7 +287,6 @@ vscode "visualstudioexptteam.intellicode-api-usage-examples"
 vscode "visualstudioexptteam.vscodeintellicode"
 vscode "vivaxy.vscode-conventional-commits"
 vscode "vunguyentuan.vscode-postcss"
-vscode "wallabyjs.console-ninja"
 vscode "wayou.vscode-todo-highlight"
 vscode "wilsonwong.caniuse-query"
 vscode "wix.vscode-import-cost"
@@ -260,4 +294,6 @@ vscode "xabikos.javascriptsnippets"
 vscode "xyz.local-history"
 vscode "yatki.vscode-surround"
 vscode "yoavbls.pretty-ts-errors"
+vscode "yzhang.markdown-all-in-one"
+vscode "zhuangtongfa.material-theme"
 vscode "zignd.html-css-class-completion"
